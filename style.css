@@ -202,3 +202,403 @@ header {
 .prev:hover, .next:hover {
   background: rgba(0,0,0,0.85);
 }
+
+
+/* About us styling*/
+/* ===== About Us Section ===== */
+.about-us-section {
+  background-color: #fdfaf5;
+  color: #18301d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 80px 10px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.section-header p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4a5b46;
+}
+.about-text h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+
+
+/* ===== Highlight Cube Paragraph ===== */
+.highlight-cube {
+  background-color: #18301d;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-cube h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.highlight-cube p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-box-section {
+  background: #f8f6fb;
+   /* Light background */
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-box-container {
+  background: #f8f6fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap; /* Responsive */
+}
+
+.about-box-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-box-content {
+  background: #f8f6fb;
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-box-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.about-box-content h3 {
+  font-size: 22px;
+  color: #0b3f1f; /* Pinkish like Spiegel site */
+  margin-bottom: 20px;
+}
+
+.about-box-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-box-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-box-content ul li {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  padding-left: 25px;
+}
+
+.about-box-content ul li::before {
+  content: "•";
+  color: #0b3f1f;
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.what-we-do-section {
+  background: #ffffff;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.what-we-do-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.what-we-do-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.what-we-do-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.what-we-do-content h2 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.what-we-do-content h3 {
+  font-size: 24px;
+  color: #0b3f1f;  /* Spiegel-like accent color */
+  margin-bottom: 20px;
+}
+
+.what-we-do-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.what-we-do-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.what-we-do-content ul li {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  padding-left: 25px;
+}
+
+.what-we-do-content ul li::before {
+  content: "•";
+  color: #0b3f1f;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 10%;
+  background: #f8f6fb;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h4 {
+  color: #7cb342; /* Green accent */
+  font-size: 3.5rem;   /* Bigger size */
+  font-weight: 800;  /* Extra bold */
+  margin-bottom: 20px;
+}
+
+
+.about-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.about-text h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #0b3f1f;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 26px;
+  }
+
+  .about-text h3 {
+    font-size: 20px;
+  }
+}
+
+
+
+
+/* Contact Section */
+.contact-section {
+  background: #0a0a0a url('img/vaacontact.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 70px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  gap: 50px;
+}
+
+.contact-info, .quick-links, .map-container {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-logo {
+  width: 170px;
+  margin-bottom: 25px;
+}
+
+.contact-info h3,
+.quick-links h3,
+.map-container h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #ffffff; /* brighter */
+}
+
+
+
+.contact-info p {
+  line-height: 1.8;
+  font-size: 20px;
+  margin: 10px 0;
+  color: #f8f8f8; /* vibrant white text */
+}
+
+.contact-info i {
+  color: #00e6ff;   /* more vibrant cyan accent for icons */
+  margin-right: 8px;
+}
+
+/* Quick Links */
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links ul li {
+  margin: 12px 0;
+}
+
+.quick-links ul li a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.quick-links ul li a:hover {
+  color: #00e6ff;
+  padding-left: 5px;
+}
+
+/* Map Styling */
+.map-container iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 260px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* event ticker css*/
+.event-ticker {
+  background-color: #e6f9e6;
+  padding: 8px 0;
+  overflow: hidden;
+  border-bottom: 2px solid #28a745;
+}
+
+.ticker-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.ticker-list {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  animation: scrollInfinite 20s linear infinite;
+}
+
+.ticker-list li {
+  font-size: 16px;
+  color: #041207;
+  white-space: nowrap;
+}
+
+/* Infinite left-to-right scrolling */
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
