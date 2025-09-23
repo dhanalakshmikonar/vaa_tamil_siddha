@@ -602,3 +602,307 @@ header {
     transform: translateX(-50%);
   }
 }
+
+/*card aesthetics*/
+/* Container */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Card Base */
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Hover Zoom */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 60, 30, 0.85);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  padding: 20px;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Title */
+.card-overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Circle Icon */
+.card-icon {
+  position: absolute;
+  bottom: 20px;   /* keep inside */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7fbf4d;
+  color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+/* Animate circle on hover */
+.card:hover .card-icon {
+  transform: translateX(-50%) scale(1.1);
+}
+/* Circle Icon */
+.card-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(145deg, #8dcf58, #6fae3a);
+  color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 22px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25),
+              inset 0 2px 6px rgba(255, 255, 255, 0.2),
+              inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for circle */
+.card:hover .card-icon {
+  transform: translateX(-50%) scale(1.15);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35),
+              inset 0 3px 8px rgba(255, 255, 255, 0.25),
+              inset 0 -4px 8px rgba(0, 0, 0, 0.25);
+}
+.card-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(145deg, #8dcf58, #6fae3a);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25),
+              inset 0 2px 6px rgba(255, 255, 255, 0.2),
+              inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card-icon img {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.card:hover .card-icon {
+  transform: translateX(-50%) scale(1.15);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.35),
+              inset 0 3px 8px rgba(255, 255, 255, 0.25),
+              inset 0 -4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-icon img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 200, 0.8));
+}
+
+/*testimonial*/
+.testimonial-section {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.testimonial-container {
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+}
+
+.testimonial {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.testimonial.active {
+  display: flex;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  color: #02332f;
+  margin: 0 20px 10px;
+}
+
+.testimonial h4 {
+  color: #c7a63c;
+  margin: 0;
+}
+
+.testimonial-dots {
+  margin-top: 15px;
+}
+
+.testimonial-dots .dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #c7d5aa;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-dots .dot.active {
+  background-color: #7ea33f;
+}
+.testimonial-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-heading h1 {
+  font-size: 2em;
+  color: #2d6a4f;
+  margin-bottom: 10px;
+}
+
+.testimonial-heading p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/*Gallery*/
+.gallery-section {
+  padding: 60px 20px;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.gallery-heading h2 {
+  font-size: 2.4em;
+  color: #2d6a4f;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.gallery-heading p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual gallery items */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.15) rotate(1deg);
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px) rotateX(2deg) rotateY(2deg);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(45, 106, 79, 0.85), rgba(45, 106, 79, 0));
+  color: #fff;
+  padding: 12px 10px;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+/* Last two images in horizontal center */
+.gallery-item-double {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  grid-column: 1 / -1; /* Span full width in grid */
+}
+
+.gallery-item-double .gallery-item {
+  flex: 1;
+  max-width: 300px; /* Optional: control width of each image */
+}
