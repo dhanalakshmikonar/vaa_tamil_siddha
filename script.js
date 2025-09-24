@@ -78,3 +78,4 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % testimonials.length;
   showTestimonial(currentIndex);
 }, 5000);
+
