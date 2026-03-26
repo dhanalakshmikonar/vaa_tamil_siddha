@@ -88,6 +88,7 @@ body, html {
   font-family: "Poppins", "Segoe UI", sans-serif; /* modern, clean font */
   letter-spacing: 0.7px;
   background: linear-gradient(90deg, #14532d, #0d9488);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: letter-spacing 0.3s;
