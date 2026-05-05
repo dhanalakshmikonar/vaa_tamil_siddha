@@ -748,6 +748,7 @@ h2 em {
   color: #fff;
   background: var(--forest);
   overflow: hidden;
+  transform: rotateY(180deg);
 }
 
 .service-back::after {

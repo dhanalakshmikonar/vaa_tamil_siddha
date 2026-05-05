@@ -114,9 +114,44 @@ function onScroll() {
 }
 
 document.querySelector(".consult-form").addEventListener("submit", (event) => {
-  const button = event.currentTarget.querySelector("button");
+  event.preventDefault();
+  const form = event.currentTarget;
+  const button = form.querySelector("button");
+  const originalText = button.textContent;
   button.textContent = "Sending Request...";
   button.disabled = true;
+
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+    .then(response => {
+      if (response.ok) {
+        button.textContent = "Request Sent!";
+        button.style.backgroundColor = "#2e7d32";
+        form.reset();
+      } else {
+        button.textContent = "Error Sending";
+        button.style.backgroundColor = "#d32f2f";
+      }
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.disabled = false;
+        button.style.backgroundColor = "";
+      }, 3000);
+    })
+    .catch(() => {
+      button.textContent = "Network Error";
+      button.style.backgroundColor = "#d32f2f";
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.disabled = false;
+        button.style.backgroundColor = "";
+      }, 3000);
+    });
 });
 
 window.addEventListener("scroll", onScroll, { passive: true });
