@@ -69,22 +69,7 @@ document.querySelectorAll(".flip-card").forEach((card) => {
   });
 });
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
-);
 
-document.querySelectorAll(".reveal").forEach((element, index) => {
-  element.style.setProperty("--reveal-delay", `${Math.min((index % 5) * 70, 280)}ms`);
-  revealObserver.observe(element);
-});
 
 function updateParallax() {
   const viewportHeight = window.innerHeight || 1;
