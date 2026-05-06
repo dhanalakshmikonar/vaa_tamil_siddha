@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
   background: var(--cream-2);
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img {
@@ -243,7 +245,7 @@ textarea {
   position: absolute;
   inset: -10vh 0;
   background-image: url("../images/slider1.png");
-  background-size: 118% auto;
+  background-size: cover;
   background-position: center;
   transform: translate3d(0, 0, 0) scale(1.06);
   transition: background-position 1200ms ease, transform 1200ms ease;
@@ -491,7 +493,7 @@ h2 em {
   margin-bottom: 18px;
   color: #fff;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 26px;
+  font-size: clamp(18px, 5vw, 26px);
   font-weight: 800;
   line-height: 1.22;
 }
@@ -1287,6 +1289,11 @@ textarea {
   .gallery-grid {
     grid-auto-columns: minmax(230px, 46vw);
   }
+
+  .doctor-section,
+  .services {
+    background-attachment: scroll !important;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1583,6 +1590,7 @@ textarea {
   }
 
   .feature-card-grid {
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 
