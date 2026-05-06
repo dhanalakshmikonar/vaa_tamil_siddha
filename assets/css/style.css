@@ -215,8 +215,7 @@ textarea {
   stroke-linejoin: round;
 }
 
-.social-rail a:nth-child(2) svg,
-.social-rail a:nth-child(3) svg {
+.social-rail a:not(:first-child) svg {
   fill: none;
 }
 
